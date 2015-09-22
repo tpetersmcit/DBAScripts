@@ -1,0 +1,18 @@
+CREATE TABLE #tempTable (tempINT INT)
+DECLARE @int as INT = 0
+WHILE @int < 100
+BEGIN
+	SET @int +=1
+	INSERT INTO #tempTable (tempINT) SELECT @int
+END
+
+SELECT tempINT
+, CASE 
+	WHEN (tempINT %3 = 0 AND tempINT %5 = 0) THEN 'FIZZBUZZ'
+	WHEN tempINT %3 = 0 THEN 'FIZZ'
+	WHEN tempINT %5 = 0 THEN 'BUZZ'
+	ELSE ''
+END AS 'FizzBuzz'
+FROM #tempTable
+
+DROP TABLE #tempTable
