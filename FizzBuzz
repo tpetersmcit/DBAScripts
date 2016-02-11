@@ -12,7 +12,7 @@ SELECT tempINT
 	WHEN tempINT %3 = 0 THEN 'FIZZ'
 	WHEN tempINT %5 = 0 THEN 'BUZZ'
 	ELSE ''
-END AS 'FizzBuzz'
+END AS 'Fizz-Buzz'
 FROM #tempTable
 
 DROP TABLE #tempTable
