@@ -1,3 +1,8 @@
+/*
+IO-Alerts
+Pre-req: Operator titled DBA
+
+*/
 USE [msdb]
 GO
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 016',
