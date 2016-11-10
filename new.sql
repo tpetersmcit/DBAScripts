@@ -1,1 +1,1 @@
-SELECT * FROM sys.tables ORDER BY name
+SELECT name as 'tableName' FROM sys.tables ORDER BY name
