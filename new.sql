@@ -1,5 +1,6 @@
 /*
 Super hard query
+Though not really that hard
 */
 
 SELECT name as 'tableName' 
